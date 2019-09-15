@@ -1,10 +1,7 @@
 package com.mahmoud.a700appstraining.location;
 
 import android.app.Service;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.ServiceConnection;
 import android.location.Location;
 import android.os.Binder;
 import android.os.IBinder;
@@ -55,8 +52,8 @@ public class LocationBoundedService extends Service implements LifecycleOwner, L
 
     @Override
     public void onLocationChanged(Location location) {
-        Intent intent = new Intent(LocationFragmentBoundedService.LocationBroadCast.ACTION_BROADCAST);
-        intent.putExtra(LocationFragmentBoundedService.LocationBroadCast.EXTRA_LOCATION, location);
+        Intent intent = new Intent(LocationFragmentIntentService.LocationBroadCast.ACTION_BROADCAST);
+        intent.putExtra(LocationFragmentIntentService.LocationBroadCast.EXTRA_LOCATION, location);
         LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
     }
 

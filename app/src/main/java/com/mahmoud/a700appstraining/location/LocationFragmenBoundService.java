@@ -40,7 +40,7 @@ import com.mahmoud.a700appstraining.R;
  * */
 
 
-public class LocationFragmenIntentService extends Fragment implements LocationHelper.ILocationCallback, OnMapReadyCallback {
+public class LocationFragmenBoundService extends Fragment implements LocationHelper.ILocationCallback, OnMapReadyCallback {
     private LocationBroadCast locationReceiver;
     private GoogleMap map;
     private Marker myLocationMarker;
@@ -94,7 +94,6 @@ public class LocationFragmenIntentService extends Fragment implements LocationHe
                 }
                 break;
         }
-//        helper.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override

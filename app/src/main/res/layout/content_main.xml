@@ -12,7 +12,7 @@
 
     <fragment
         android:id="@+id/locationFragment"
-        android:name="com.mahmoud.a700appstraining.location.LocationFragment"
+        android:name="com.mahmoud.a700appstraining.location.LocationFragmentIntentService"
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="wrap_content" />

@@ -36,7 +36,7 @@ import com.mahmoud.a700appstraining.R;
  * */
 
 
-public class LocationFragmentBoundedService extends Fragment implements LocationHelper.ILocationCallback, OnMapReadyCallback {
+public class LocationFragmentIntentService extends Fragment implements LocationHelper.ILocationCallback, OnMapReadyCallback {
     private LocationBroadCast locationReceiver;
     private GoogleMap map;
     private Marker myLocationMarker;
